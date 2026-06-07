@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 1. Reset e Inicialización Global del Lienzo */
+html, 
+body, 
+#root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* h1 {
+  font-size: 40px;
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 28px;
+  }
+} */
+

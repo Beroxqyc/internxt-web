@@ -1,10 +1,6 @@
 import type { FileItem } from "../types/file";
 import { Trash } from "lucide-react";
 
-interface FileCardProps {
-  file: FileItem;
-  onDelete: (id: string, name: string) => void;
-}
 
 export default function FileTable({ files, onDelete }: { files: FileItem[]; onDelete: (id: string, name: string) => void }) {
   return (

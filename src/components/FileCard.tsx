@@ -11,10 +11,6 @@ import {
   Sheet
  } from "lucide-react";
 
-interface FileCardProps {
-  file: FileItem;
-  onDelete: () => void;
-}
 
 const getFileIcon = (fileType: string) => {
   const type = fileType.toLowerCase();
@@ -79,7 +75,7 @@ const getFileIcon = (fileType: string) => {
 
 export default function FileCard({ file, onDelete }: { file: FileItem; onDelete: () => void }) {
 
-  const { icon, bgClass } = getFileIcon(file.type);
+  const { icon} = getFileIcon(file.type);
   
   return (
     <div
